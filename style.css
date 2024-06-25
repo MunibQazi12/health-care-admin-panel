@@ -42,3 +42,21 @@ table tr {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
+
+.doctor-list-table th:before {
+  right: 0.6em;
+  content: "↑";
+  position: absolute;
+  bottom: 0.5em;
+  display: block;
+  opacity: 0.3;
+}
+
+.doctor-list-table th:after {
+  right: 1em;
+  content: "↓";
+  position: absolute;
+  bottom: 0.5em;
+  display: block;
+  opacity: 0.3;
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Medical Dashboard</title>
+    <title>Doctors List</title>
     <script src="./script.js"></script>
 </head>
 
@@ -480,9 +480,8 @@
                                 <img src="./images/svg/arrow-right.svg" alt="rightarrow">
                             </div>
                         </a>
-                    </li>
-                    <li class="mb-[1px]">
-                        <a href="#/"
+                    </li>                                        <th class="p-2  font-semibold truncate">
+
                             class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
                             <div class="flex items-center gap-4">
                                 <div
@@ -608,195 +607,39 @@
                 </div>
             </div>
             <div class="sm:p-6 p-4">
-                <div
-                    class="bg-[url('./images/svg/medical-dashboard-banner.svg')] bg-cover bg-right p-4 rounded-lg mb-4 bg-no-repeat container-shadow">
-                    <div class="py-6 px-4 text-white">
-                        <p class="text-sm leading-4 mb-2 font-medium">Good Morning,</p>
-                        <h2 class="text-3xl mb-2 font-medium">Dr. Smith White</h2>
-                        <h5 class="text-lg leading-5 mb-2 font-medium">Your schedule today.</h5>
-                        <div class="flex flex-wrap items-center gap-4 mt-6">
-                            <div class="flex gap-4 items-center">
-                                <div
-                                    class="md:w-16 w-12 md:h-16 h-12 bg-[#1ec5f9] rounded-lg flex justify-center items-center links-shadow">
-                                    <img src="./images/svg/surgical-mask.svg" alt="mask" class="invert w-5 h-5">
-                                </div>
-                                <div class="">
-                                    <h3 class="text-[28px] leading-none font-medium">9</h3>
-                                    <p class="text-sm">Appointments</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-4 items-center">
-                                <div
-                                    class="md:w-16 w-12 md:h-16 h-12 bg-[#79d874] rounded-lg flex justify-center items-center links-shadow">
-                                    <img src="./images/svg/lungs.svg" alt="lungs" class="invert w-5 h-5">
-                                </div>
-                                <div class="">
-                                    <h3 class="text-[28px] leading-none font-medium">3</h3>
-                                    <p class="text-sm">Surgeries</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#79d874] p-4 rounded-lg mb-4 text-white container-shadow">
-                    <h5 class="text-lg font-medium leading-5 pb-2">Activity</h5>
-                    <div class="pb-2">
-                        <img src="./images/svg/activity-graph.svg" alt="bed" class="w-full">
-                    </div>
-                    <div class="text-center text-sm">
-                        <span class="bg-[#ff5a39] rounded-md py-1 px-2 text-xs">60%</span>
-                        patients are higher<br>than last week.
-
-                    </div>
-                </div>
-                <div class="flex 2xl:flex-nowrap flex-wrap items-center gap-4 mb-4">
-                    <div class="bg-white p-4 rounded-lg 2xl:w-1/2 w-full container-shadow">
-                        <div class="flex justify-between items-start md:pb-6 pb-4">
-                            <h5 class="text-lg font-medium leading-5 text-[#272727]">Available Doctors</h5>
-                            <div class="w-fit flex gap-4">
-                                <button class="w-9 h-9 rounded-md links-shadow">
-                                    <img src="./images/svg/slider-arrow-left.svg" alt="sliderArrow" class="opacity-50">
-                                </button>
-                                <button class="w-9 h-9 rounded-md links-shadow">
-                                    <img src="./images/svg/slider-arrow-right.svg" alt="sliderArrow" class="opacity-50">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex 2xl:flex-nowrap flex-wrap gap-4 justify-between mb-4">
-                            <div
-                                class="sm:w-[48.5%] w-full rounded-md p-4 border border-[#dde2ee] flex gap-4 items-center">
-                                <div class="w-16 h-16 rounded-full overflow-hidden">
-                                    <img src="./images/png/doctor-1.png" alt="doctor-1">
-                                </div>
-                                <div>
-                                    <p class="text-sm text-[#272727] font-bold">George Bailey</p>
-                                    <p class="text-sm text-[#272727] mt-1">Dentist</p>
-                                    <div class="mt-1 flex items-center gap-2">
-                                        <div class="flex items-center gap-0.5">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                        </div>
-                                        <p class="text-sm text-[#272727]">5</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="sm:w-[48.5%] w-full rounded-md p-4 border border-[#dde2ee] flex gap-4 items-center">
-                                <div class="w-16 h-16 rounded-full overflow-hidden">
-                                    <img src="./images/png/doctor-2.png" alt="doctor-2">
-                                </div>
-                                <div>
-                                    <p class="text-sm text-[#272727] font-bold">Bshton Cozei</p>
-                                    <p class="text-sm text-[#272727] mt-1">Gynecologist</p>
-                                    <div class="mt-1 flex items-center gap-2">
-                                        <div class="flex items-center gap-0.5">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star-selected.svg" alt="star"
-                                                class="w-[14px] h-[14px]">
-                                            <img src="./images/svg/star.svg" alt="star" class="w-[14px] h-[14px]">
-                                        </div>
-                                        <p class="text-sm text-[#272727]">4</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg 2xl:w-1/2 w-full container-shadow">
-                        <div class="flex justify-between items-start md:pb-6 pb-4">
-                            <h5 class="text-lg font-medium leading-5 text-[#272727]">Upcoming Surgeries</h5>
-                            <div class="w-fit flex gap-4">
-                                <button class="w-9 h-9 rounded-md slider-btn-shadow">
-                                    <img src="./images/svg/slider-arrow-left.svg" alt="sliderArrow" class="opacity-50">
-                                </button>
-                                <button class="w-9 h-9 rounded-md slider-btn-shadow">
-                                    <img src="./images/svg/slider-arrow-right.svg" alt="sliderArrow" class="opacity-50">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex 2xl:flex-nowrap flex-wrap gap-4 justify-between mb-4">
-                            <div
-                                class="sm:w-[48.5%] w-full rounded-md p-4 border border-[#dde2ee] flex gap-4 items-center">
-                                <div class="w-16 h-16 rounded-md bg-[#ffefec] flex justify-center items-center">
-                                    <div class="text-center">
-                                        <p class="text-sm text-[#ff5a39]">Mon</p>
-                                        <p class="text-2xl text-[#ff5a39] font-bold leading-none">27</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-[#272727] font-semibold">Smith White</p>
-                                    <p class="text-sm text-[#272727] mt-1">Oncologist</p>
-                                    <div
-                                        class="mt-1 w-fit flex items-center bg-[#ff5a39] rounded-md py-1 px-2 text-white text-xs">
-                                        10:30 AM
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="sm:w-[48.5%] w-full rounded-md p-4 border border-[#dde2ee] flex gap-4 items-center">
-                                <div class="w-16 h-16 rounded-md bg-[#e8f8ff] flex justify-center items-center">
-                                    <div class="text-center">
-                                        <p class="text-sm text-[#039ce0]">Tue</p>
-                                        <p class="text-2xl text-[#039ce0] font-bold leading-none">28</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-[#272727] font-semibold">Bernardo James</p>
-                                    <p class="text-sm text-[#272727] mt-1">Radiologist</p>
-                                    <div
-                                        class="mt-1 w-fit flex items-center bg-[#039ce0] rounded-md py-1 px-2 text-white text-xs">
-                                        3:30 PM
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
                     <h5 class="text-lg font-medium leading-5 md:pb-8 pb-4 text-[#272727]">Appointments</h5>
                     <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
                         <div class="w-full overflow-x-auto">
                             <table
-                                class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto ">
+                                class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto doctor-list-table">
                                 <thead class="align-bottom">
                                     <tr class="">
-                                        <th class="p-2 font-semibold truncate">
-                                            #
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                        ID
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
-                                            Patient Name
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Doctor Name
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
                                             Age
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
                                             Consulting Doctor
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
                                             Department
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
                                             Date
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
                                             Time
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
                                             Disease
                                         </th>
-                                        <th class="p-2 font-semibold truncate">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
                                             Actions
                                         </th>
                                     </tr>
@@ -969,20 +812,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex 2xl:flex-nowrap flex-wrap items-center gap-4 mb-4">
-                    <div class="bg-white p-4 rounded-lg 2xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Income</h5>
-                        <div class="pb-2">
-                            <img src="./images/svg/medicalIcome.svg" alt="medicalIcome" class="w-full">
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg 2xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Pharmacy Orders</h5>
-                        <div class="pb-2">
-                            <img src="./images/svg/pharmacy-orders.svg" alt="pharmacy" class="w-full">
                         </div>
                     </div>
                 </div>
