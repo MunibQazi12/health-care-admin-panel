@@ -60,3 +60,10 @@ table tr {
   display: block;
   opacity: 0.3;
 }
+
+.table-select {
+  background-image: url("./images/svg/select-dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  background-size: 16px 12px;
+}
