@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Add Doctor</title>
+    <title>Patient Dashboard</title>
     <script src="./script.js"></script>
 </head>
 
@@ -564,7 +564,7 @@
                         <div class="px-2">
                             <img src="./images/svg/arrow-right.svg" alt="home" class="w-6 h-6 ">
                         </div>
-                        <span class="text-[#116aef] text-sm">Add Doctor</span>
+                        <span class="text-[#116aef] text-sm">Patient Dashboard</span>
                     </li>
                 </ul>
                 <div class="lg:flex hidden gap-1 items-center">
@@ -580,221 +580,323 @@
             </div>
             <div class="sm:p-6 p-4">
                 <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <div class="border-b border-gray-200">
-                        <ul class="-mb-px flex sm:space-x-8 space-x-1 text-[#272727]" aria-label="Tabs">
-                            <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                            <li> <a href="/addDoctor-form.html"
-                                    class="group inline-flex items-center border-b-2 border-transparent px-1 py-4 sm:text-sm text-xs font-medium hover:border-gray-300 hover:text-gray-700">
-                                    <!-- Current: "text-indigo-500", Default: "text-gray-400 group-hover:text-gray-500" -->
-                                    <img src="./images/form-icons/briefcase-4-line.svg" alt="briefcase"
-                                        class="w-5 mr-2 sm:block hidden">
-                                    <span> Personal Details</span>
-                                </a></li>
-                            <li>
-                                <a href="/addDoctor-formB.html"
-                                    class="group inline-flex items-center border-b-2 border-transparent px-1 py-4 sm:text-sm text-xs font-medium hover:border-gray-300 hover:text-gray-700">
-                                    <img src="./images/form-icons/account-pin-circle-line.svg" alt="account"
-                                        class="w-5 mr-2 sm:block hidden">
-                                    <span>Profile & Bio</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/doctor-availability.html"
-                                    class="group inline-flex items-center border-b-2 border-[#116aef] px-1 py-4 sm:text-sm text-xs font-medium text-[#116aef]">
-                                    <img src="./images/form-icons/calendar-check-blue.svg" alt="calendar"
-                                        class="w-5 mr-2 sm:block hidden">
-
-                                    <span>Avialability</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/doctor-accountDetails.html"
-                                    class="group inline-flex items-center border-b-2 border-transparent px-1 py-4 sm:text-sm text-xs font-medium hover:border-gray-300 hover:text-gray-700">
-                                    <img src="./images/form-icons/lock-password-line.svg" alt="lock"
-                                        class="w-5 mr-2 sm:block hidden">
-
-                                    <span>Account Detials</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mt-6">
-                        <form action="">
-                            <div class="min-h-[350px]">
-                                <div class="flex flex-wrap gap-4 items-center  w-full text-[#272727] text-sm">
-
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Sun</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Mon</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Tue</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Wed</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Thu</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Fri</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Sat</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="flex gap-4 justify-between w-full text-[#272727]">
+                        <div class="flex flex-wrap gap-6 items-center w-[calc(100%-112px)]">
+                            <div class="flex items-center gap-2">
+                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
+                                    <img src="./images/form-icons/account-pin-circle-line.svg" alt="account" class="w-7 invert">
+                                </div>
+                                <div>
+                                    <h4 class="mb-1 text-xl font-medium">Carole</h4>
+                                    <p class="text-sm">Patient Name</p>
                                 </div>
                             </div>
-                            <div class="mt-8 flex items-center gap-2 justify-end">
-                                <a href="viod:javascript(0)"
-                                    class="py-1.5 px-3 text-sm border border-[#d8e2eb] hover:bg-[#d8e2eb] text-[#272727] rounded-md links-shadow">Cancel</a>
-                                <a href="viod:javascript(0)"
-                                    class="py-1.5 px-3 text-sm border border-[#116aef] bg-[#116aef] text-white rounded-md links-shadow">
-                                    Create Doctor Profile
-                                </a>
+                            <div class="flex items-center gap-2">
+                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
+                                    <img src="./images/form-icons/account-pin-circle-line.svg" alt="account" class="w-7 invert">
+                                </div>
+                                <div>
+                                    <h4 class="mb-1 text-xl font-medium">Female</h4>
+                                    <p class="text-sm">Gender</p>
+                                </div>
                             </div>
-                        </form>
+                            <div class="flex items-center gap-2">
+                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
+                                    <img src="./images/svg/arrow-rightups.svg" alt="account" class="w-7 invert">
+                                </div>
+                                <div>
+                                    <h4 class="mb-1 text-xl font-medium">68</h4>
+                                    <p class="text-sm">Patient Age</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
+                                    <img src="./images/form-icons/drop-line.svg" alt="account" class="w-7 invert">
+                                </div>
+                                <div>
+                                    <h4 class="mb-1 text-xl font-medium">O+</h4>
+                                    <p class="text-sm">Blood Type</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-16 h-16 rounded-full bg-[#d8e2eb] flex justify-center items-center">
+                                    <img src="./images/svg/stethoscope-line.svg" alt="account" class="w-7 invert">
+                                </div>
+                                <div>
+                                    <h4 class="mb-1 text-xl font-medium">Dr. David</h4>
+                                    <p class="text-sm">Consulting Doctor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-28 h-28 rounded-full overflow-hidden">
+                            <img src="./images/png/patient3.png" alt="patient">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mb-4 grid xl:grid-cols-4	lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-1.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Clive Nathan</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-2.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Laura Jaden</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-3.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Aliko Maria</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-4.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Clive Nathan</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-5.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Clive Nathan</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-6.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Laura Jaden</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-1.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Aliko Maria</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-2.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Clive Nathan</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-5.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Clive Nathan</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-6.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Laura Jaden</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-1.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Aliko Maria</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
+                        <a href="/doctors-profile.html"
+                            class="w-full flex items-center justify-center flex-col text-[#4c545e] hover:text-[#272727]">
+                            <div class="w-28 h-28 rounded-full mb-4 overflow-hidden">
+                                <img src="./images/png/doctor-2.png" alt="doctor1">
+                            </div>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Dr. Clive Nathan</h5>
+                            <p class="text-sm mb-2">Gynecologist, General Physician
+                            </p>
+                            <p class="mb-4 text-sm leading-none">8 Years Experience</p>
+                        </a>
+                        <div class="flex justify-center items-center gap-1 mb-4">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star.svg" alt="star" class="w-[18px] h-[18px]">
+                            <img src="./images/svg/star.svg" alt="star" class="w-[18px] h-[18px]">
+                        </div>
+                        <a href="/book-appointment.html"
+                            class="bg-[#116aef] rounded-md text-white text-base py-2 px-3 links-shadow">Book
+                            Appointment</a>
                     </div>
                 </div>
                 <div class="mt-10 py-2 px-4 rounded-lg bg-white text-[#116aef] text-xs container-shadow">

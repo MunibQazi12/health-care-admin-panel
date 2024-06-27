@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Add Doctor</title>
+    <title>Doctors Profile</title>
     <script src="./script.js"></script>
 </head>
 
@@ -71,7 +71,7 @@
     </header>
     <section class="flex items-center w-full">
         <nav id="dashboard-sidebar"
-            class="w-[250px] bg-white fixed top-[50px] left-0 bottom-0 transform transition-transform duration-300 ease-in-out z-20 container-shadow">
+            class="w-[250px] bg-white fixed top-[50px] left-0 bottom-0 transform transition-transform duration-300 ease-in-out z-10 container-shadow">
             <div class="w-full flex gap-4 items-center overflow-hidden py-5 px-3 border-b border-[#f1f1f1] mb-4">
                 <div class="w-12 h-12 rounded-full border border-white overflow-hidden container-shadow">
                     <img src="./images/png/profile.png" alt="profile">
@@ -95,21 +95,22 @@
                     </li>
                     <li class="mb-[1px]">
                         <a href="/medical-dashboard.html"
-                            class="flex items-center gap-4 py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] bg-[#e9f2ff] group">
-                            <div class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#116aef]">
-                                <img src="./images/svg/home-smile-2-line.svg" alt="home6" class="w-6 h-6 invert">
-                            </div>
-                            <span class="text-[#116aef] text-sm">Medical Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="mb-[1px]">
-                        <a href="/dentist-dashboard.html"
                             class="flex items-center gap-4 py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
                             <div
                                 class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
-                                <img src="./images/svg/home-5-line.svg" alt="home6" class="w-6 h-6 svg-color-change">
+                                <img src="./images/svg/home-smile-2-line.svg" alt="home6"
+                                    class="w-6 h-6 svg-color-change">
                             </div>
-                            <span class="text-black text-sm">Dentist Dashboard</span>
+                            <span class="text-black text-sm">Medical Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="mb-[1px]">
+                        <a href="#/"
+                            class="flex items-center gap-4 py-2 pr-6 pl-4 text-black border-l-2 border-transparent bg-[#e9f2ff] hover:border-[#116aef]">
+                            <div class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#116aef]">
+                                <img src="./images/svg/home-5-line.svg" alt="home6" class="w-6 h-6 invert">
+                            </div>
+                            <span class="text-[#116aef] text-sm">Dentist Dashboard</span>
                         </a>
                     </li>
                     <li class="mb-[1px]">
@@ -451,91 +452,89 @@
                             </div>
                         </a>
                     </li>
-                    <th class="p-2  font-semibold truncate">
-
-                        class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2
-                        border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
-                                <img src="./images/svg/alert-line.svg" alt="home6" class="w-6 h-6 svg-color-change">
+                    <li class="mb-[1px]">
+                        <a href="#/"
+                            class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
+                                    <img src="./images/svg/alert-line.svg" alt="home6" class="w-6 h-6 svg-color-change">
+                                </div>
+                                <span class="text-black text-sm">Page Not Found</span>
                             </div>
-                            <span class="text-black text-sm">Page Not Found</span>
-                        </div>
                         </a>
-                        </li>
-                        <li class="mb-[1px]">
-                            <a href="#/"
-                                class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
-                                <div class="flex items-center gap-4">
-                                    <div
-                                        class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
-                                        <img src="./images/svg/auction-line.svg" alt="home6"
-                                            class="w-6 h-6 svg-color-change">
-                                    </div>
-                                    <span class="text-black text-sm">Maintenance</span>
+                    </li>
+                    <li class="mb-[1px]">
+                        <a href="#/"
+                            class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
+                                    <img src="./images/svg/auction-line.svg" alt="home6"
+                                        class="w-6 h-6 svg-color-change">
                                 </div>
-
-                            </a>
-                        </li>
-                        <li class="mb-[1px]">
-                            <a href="#/"
-                                class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
-                                <div class="flex items-center gap-4">
-                                    <div
-                                        class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
-                                        <img src="./images/svg/dropdown-list.svg" alt="home6"
-                                            class="w-6 h-6 svg-color-change">
-                                    </div>
-                                    <span class="text-black text-sm">Menu Level</span>
+                                <span class="text-black text-sm">Maintenance</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mb-[1px]">
+                        <a href="#/"
+                            class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
+                                    <img src="./images/svg/dropdown-list.svg" alt="home6"
+                                        class="w-6 h-6 svg-color-change">
                                 </div>
-                                <div class="w-6 h-6">
-                                    <img src="./images/svg/arrow-right.svg" alt="rightarrow">
+                                <span class="text-black text-sm">Menu Level</span>
+                            </div>
+                            <div class="w-6 h-6">
+                                <img src="./images/svg/arrow-right.svg" alt="rightarrow">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mb-[1px]">
+                        <a href="#/"
+                            class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
+                                    <img src="./images/svg/send-plane-line.svg" alt="home6"
+                                        class="w-6 h-6 svg-color-change">
                                 </div>
-                            </a>
-                        </li>
-                        <li class="mb-[1px]">
-                            <a href="#/"
-                                class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
-                                <div class="flex items-center gap-4">
-                                    <div
-                                        class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
-                                        <img src="./images/svg/send-plane-line.svg" alt="home6"
-                                            class="w-6 h-6 svg-color-change">
-                                    </div>
-                                    <span class="text-black text-sm">External Link</span>
+                                <span class="text-black text-sm">External Link</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mb-[1px]">
+                        <a href="#/"
+                            class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
+                                    <img src="./images/svg/exchange-line.svg" alt="home6"
+                                        class="w-6 h-6 svg-color-change">
                                 </div>
-                            </a>
-                        </li>
-                        <li class="mb-[1px]">
-                            <a href="#/"
-                                class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
-                                <div class="flex items-center gap-4">
-                                    <div
-                                        class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
-                                        <img src="./images/svg/exchange-line.svg" alt="home6"
-                                            class="w-6 h-6 svg-color-change">
-                                    </div>
-                                    <span class="text-black text-sm">Chip</span>
+                                <span class="text-black text-sm">Chip</span>
+                            </div>
+                            <span class="py-1 px-3 text-white text-sm font-semibold bg-[#116aef] rounded">6</span>
+                        </a>
+                    </li>
+                    <li class="mb-[1px]">
+                        <a href="#/"
+                            class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
+                                    <img src="./images/svg/ticket-line.svg" alt="home6"
+                                        class="w-6 h-6 svg-color-change">
                                 </div>
-                                <span class="py-1 px-3 text-white text-sm font-semibold bg-[#116aef] rounded">6</span>
-                            </a>
-                        </li>
-                        <li class="mb-[1px]">
-                            <a href="#/"
-                                class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2 border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
-                                <div class="flex items-center gap-4">
-                                    <div
-                                        class="w-9 h-9 flex justify-center items-center rounded-lg bg-[#e9f2ff] group-hover:bg-white">
-                                        <img src="./images/svg/ticket-line.svg" alt="home6"
-                                            class="w-6 h-6 svg-color-change">
-                                    </div>
-                                    <span class="text-black text-sm">Badge</span>
-                                </div>
-                                <span
-                                    class="py-1 px-3 text-sm font-semibold text-[#116aef] border border-[#116aef] rounded">Chip</span>
-                            </a>
-                        </li>
+                                <span class="text-black text-sm">Badge</span>
+                            </div>
+                            <span
+                                class="py-1 px-3 text-sm font-semibold text-[#116aef] border border-[#116aef] rounded">Chip</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="w-full bg-white absolute bottom-0 left-0">
@@ -564,7 +563,7 @@
                         <div class="px-2">
                             <img src="./images/svg/arrow-right.svg" alt="home" class="w-6 h-6 ">
                         </div>
-                        <span class="text-[#116aef] text-sm">Add Doctor</span>
+                        <span class="text-[#116aef] text-sm">Doctors Profile</span>
                     </li>
                 </ul>
                 <div class="lg:flex hidden gap-1 items-center">
@@ -579,222 +578,227 @@
                 </div>
             </div>
             <div class="sm:p-6 p-4">
-                <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <div class="border-b border-gray-200">
-                        <ul class="-mb-px flex sm:space-x-8 space-x-1 text-[#272727]" aria-label="Tabs">
-                            <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                            <li> <a href="/addDoctor-form.html"
-                                    class="group inline-flex items-center border-b-2 border-transparent px-1 py-4 sm:text-sm text-xs font-medium hover:border-gray-300 hover:text-gray-700">
-                                    <!-- Current: "text-indigo-500", Default: "text-gray-400 group-hover:text-gray-500" -->
-                                    <img src="./images/form-icons/briefcase-4-line.svg" alt="briefcase"
-                                        class="w-5 mr-2 sm:block hidden">
-                                    <span> Personal Details</span>
-                                </a></li>
-                            <li>
-                                <a href="/addDoctor-formB.html"
-                                    class="group inline-flex items-center border-b-2 border-transparent px-1 py-4 sm:text-sm text-xs font-medium hover:border-gray-300 hover:text-gray-700">
-                                    <img src="./images/form-icons/account-pin-circle-line.svg" alt="account"
-                                        class="w-5 mr-2 sm:block hidden">
-                                    <span>Profile & Bio</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/doctor-availability.html"
-                                    class="group inline-flex items-center border-b-2 border-[#116aef] px-1 py-4 sm:text-sm text-xs font-medium text-[#116aef]">
-                                    <img src="./images/form-icons/calendar-check-blue.svg" alt="calendar"
-                                        class="w-5 mr-2 sm:block hidden">
-
-                                    <span>Avialability</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/doctor-accountDetails.html"
-                                    class="group inline-flex items-center border-b-2 border-transparent px-1 py-4 sm:text-sm text-xs font-medium hover:border-gray-300 hover:text-gray-700">
-                                    <img src="./images/form-icons/lock-password-line.svg" alt="lock"
-                                        class="w-5 mr-2 sm:block hidden">
-
-                                    <span>Account Detials</span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="flex gap-4 2xl:flex-nowrap flex-wrap mb-4 mt-6 2xl:h-[230px]">
+                    <div
+                        class="bg-[url('./images/png/doctors-dashboard/doctors-dashboardBG.jpg')] bg-cover bg-right p-4 rounded-lg bg-no-repeat 2xl:w-1/2 w-full flex sm:flex-nowrap flex-wrap gap-4 container-shadow">
+                        <div class="sm:w-1/4 w-full">
+                            <div class="max-w-60 rounded-lg">
+                                <img src="./images/png/doctor-6.png" alt="doctor" class="max-w-full rounded-lg">
+                            </div>
+                        </div>
+                        <div class="sm:w-3/4 w-full text-white mt-3">
+                            <p class="text-sm leading-4 mb-2 font-medium">Good Morning,</p>
+                            <h2 class="sm:text-3xl text-2xl mb-2 font-medium">Dr. Jessika Linda</h2>
+                            <h5 class="sm:text-lg text-sm leading-none mb-2 font-medium">Gynecologist, MS, MD, MBBS</h5>
+                            <p class="text-sm leading-none text-white font-medium">16 Years Experience Overall
+                            </p>
+                            <div class="mt-2 flex items-center gap-1">
+                                <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                                <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                                <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                                <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                                <img src="./images/svg/star-selected.svg" alt="star" class="w-[18px] h-[18px]">
+                            </div>
+                            <p class="mt-2 text-sm leading-none text-white font-medium">2896 Reviews</p>
+                        </div>
                     </div>
-                    <div class="mt-6">
-                        <form action="">
-                            <div class="min-h-[350px]">
-                                <div class="flex flex-wrap gap-4 items-center  w-full text-[#272727] text-sm">
-
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Sun</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                    <div class="2xl:w-1/2 w-full flex sm:flex-nowrap flex-wrap gap-4 items-center">
+                        <div
+                            class="sm:w-1/3 w-full 2xl:h-full bg-white rounded-lg container-shadow p-4 flex flex-col justify-center items-center">
+                            <div class="w-20 h-20 rounded-[32px] bg-[#e3eefd] flex justify-center items-center mb-2">
+                                <img src="./images/svg/empathize-line.svg" alt="syringe" class="w-10">
+                            </div>
+                            <h2 class="text-3xl text-[#116aef] mb-2 font-semibold">3909</h2>
+                            <p class="text-sm text-[#272727] mb-2">Patients</p>
+                            <span class="text-xs font-medium rounded-md bg-[#116aef] text-white py-1 px-2">40%
+                                High</span>
+                        </div>
+                        <div
+                            class="sm:w-1/3 w-full 2xl:h-full bg-white rounded-lg container-shadow p-4 flex flex-col justify-center items-center">
+                            <div class="w-20 h-20 rounded-[32px] bg-[#ffefec] flex justify-center items-center mb-2">
+                                <img src="./images/svg/lungs-red.svg" alt="syringe" class="w-10">
+                            </div>
+                            <h2 class="text-3xl text-[#ff5a39] mb-2 font-semibold">906</h2>
+                            <p class="text-sm text-[#272727] mb-2">Surgeries</p>
+                            <span class="text-xs font-medium rounded-md bg-[#ff5a39] text-white py-1 px-2">15%
+                                High</span>
+                        </div>
+                        <div
+                            class="sm:w-1/3 w-full 2xl:h-full bg-white rounded-lg container-shadow p-4 flex flex-col justify-center items-center">
+                            <div class="w-20 h-20 rounded-[32px] bg-[#e9fdea] flex justify-center items-center mb-2">
+                                <img src="./images/svg/star-s-line.svg" alt="star" class="w-10">
+                            </div>
+                            <h2 class="text-3xl text-[#0ebb13] mb-2 font-semibold">2896</h2>
+                            <p class="text-sm text-[#272727] mb-2">Reviews</p>
+                            <span class="text-xs font-medium rounded-md bg-[#0ebb13] text-white py-1 px-2">25%
+                                High</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex xl:flex-nowrap flex-wrap gap-4 items-start mb-4">
+                    <div class="xl:w-[67.2%] w-full">
+                        <div class="bg-white p-4 rounded-lg w-full sm:text-left text-center container-shadow mb-4">
+                            <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">About</h5>
+                            <p class="text-sm text-[#272727] mb-4">Dr. Jessika Linda is an eminent Endocrinologist
+                                associated with med hospitals who is specially trained to diagnose diseases related to
+                                glands. She specialises in treating people who suffer from hormonal imbalances,
+                                typically from glands in the endocrine system. The most common conditions treated by Dr.
+                                Linda are Diabetes, Metabolic disorders, Lack of growth, Osteoporosis, Thyroid diseases,
+                                Cancers of the endocrine glands, Over- or under-production of hormones, Cholesterol
+                                disorders, Hypertension and Infertility. Also available for consultation at Med
+                                hospital. Dr. Linda's approach lies in understanding patients diseases and the procedure
+                                recommended along with care.</p>
+                            <p class="text-sm text-[#272727] font-medium mb-2">Specialized in</p>
+                            <div class="flex sm:justify-start justify-center flex-wrap gap-2 items-center">
+                                <span
+                                    class="bg-[#116aef] rounded-md text-xs leading-none font-semibold py-1 px-2 text-white">Diabetes</span>
+                                <span
+                                    class="bg-[#116aef] rounded-md text-xs leading-none font-semibold py-1 px-2 text-white">Thyroid</span>
+                                <span
+                                    class="bg-[#116aef] rounded-md text-xs leading-none font-semibold py-1 px-2 text-white">Osteoporosis</span>
+                                <span
+                                    class="bg-[#116aef] rounded-md text-xs leading-none font-semibold py-1 px-2 text-white">Surgeon</span>
+                                <span
+                                    class="bg-[#116aef] rounded-md text-xs leading-none font-semibold py-1 px-2 text-white">General</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg w-full container-shadow">
+                            <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Patient Reviews</h5>
+                            <div class="w-full">
+                                <div class="mt-8 flex gap-4 items-start">
+                                    <div class="w-16 h-16 rounded-md">
+                                        <img src="./images/png/patient1.png" alt="patient1" class="rounded-md">
                                     </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Mon</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
+                                    <div class="w-[calc(100%-64px)]">
+                                        <span
+                                            class="text-[#116aef] border border-[#116aef] font-medium rounded-md text-xs py-1 px-2">Excellent</span>
+                                        <p class="text-sm font-medium mt-4">Wendi Combs</p>
+                                        <p class="mt-2 text-sm">I am consulting with her for last 10 years and she is
+                                            really good in thyroid. Her experience has greatest strength. By looking at
+                                            the report she will diagnosis the problem and listen to us. We might think
+                                            she is in a hurry to complete the patient but her experience makes her 100%.
+                                        </p>
+                                        <div class="mt-2 text-[#272727] flex gap-1 items-center">
+                                            <img src="./images/svg/thumb-up-line.svg" alt="thumbup" class="w-4 h-4">
+                                            <p class="text-sm">I recommend the doctor.</p>
                                         </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Tue</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Wed</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Thu</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Fri</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl:w-[23.5%] lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Sat</label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-l-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">From</option>
-                                                    <option value="1">7AM</option>
-                                                    <option value="2">8AM</option>
-                                                    <option value="3">9AM</option>
-                                                </select>
-                                            </div>
-                                            <div class="w-1/2">
-                                                <select
-                                                    class="h-full bg-white rounded-r-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                                    <option value="0">To</option>
-                                                    <option value="1">3PM</option>
-                                                    <option value="4">4PM</option>
-                                                    <option value="5">5PM</option>
-                                                </select>
-                                            </div>
+                                        <div class="mt-2 flex gap-1 items-center">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
                                         </div>
                                     </div>
                                 </div>
+                                <div class="md:mt-12 mt-6 flex gap-4 items-start">
+                                    <div class="w-16 h-16 rounded-md">
+                                        <img src="./images/png/patient2.png" alt="patient1" class="rounded-md">
+                                    </div>
+                                    <div class="w-[calc(100%-64px)]">
+                                        <span
+                                            class="text-[#116aef] border border-[#116aef] font-medium rounded-md text-xs py-1 px-2">Excellent</span>
+                                        <p class="text-sm font-medium mt-4">Wendi Combs</p>
+                                        <p class="mt-2 text-sm">I am consulting with her for last 10 years and she is
+                                            really good in thyroid. Her experience has greatest strength. By looking at
+                                            the report she will diagnosis the problem and listen to us. We might think
+                                            she is in a hurry to complete the patient but her experience makes her 100%.
+                                        </p>
+                                        <div class="mt-2 text-[#272727] flex gap-1 items-center">
+                                            <img src="./images/svg/thumb-up-line.svg" alt="thumbup" class="w-4 h-4">
+                                            <p class="text-sm">I recommend the doctor.</p>
+                                        </div>
+                                        <div class="mt-2 flex gap-1 items-center">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="md:mt-12 mt-6 flex gap-4 items-start">
+                                    <div class="w-16 h-16 rounded-md">
+                                        <img src="./images/png/patient3.png" alt="patient1" class="rounded-md">
+                                    </div>
+                                    <div class="w-[calc(100%-64px)]">
+                                        <span
+                                            class="text-[#ff5a39] border border-[#ff5a39] font-medium rounded-md text-xs py-1 px-2">Bad</span>
+                                        <p class="text-sm font-medium mt-4">Wendi Combs</p>
+                                        <p class="mt-2 text-sm">Its a not recommerded example. Its a not recommerded example. Its a not recommerded example. Its a not recommerded example.</p>
+                                        <div class="mt-2 flex gap-1 items-center">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star-selected.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                            <img src="./images/svg/star.svg" alt="star"
+                                                class="w-[18px] h-[18px]">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-12">
+                                    <button class="w-full text-center bg-[#116aef] text-white text-base rounded-md py-1.5 px-3 links-shadow">Load More</button>
+                                </div>
                             </div>
-                            <div class="mt-8 flex items-center gap-2 justify-end">
-                                <a href="viod:javascript(0)"
-                                    class="py-1.5 px-3 text-sm border border-[#d8e2eb] hover:bg-[#d8e2eb] text-[#272727] rounded-md links-shadow">Cancel</a>
-                                <a href="viod:javascript(0)"
-                                    class="py-1.5 px-3 text-sm border border-[#116aef] bg-[#116aef] text-white rounded-md links-shadow">
-                                    Create Doctor Profile
-                                </a>
+                        </div>
+                    </div>
+                    <div class="xl:w-[32.6%] w-full flex gap-4 xl:flex-col sm:flex-row flex-col">
+                        <div class="bg-white p-4 rounded-lg xl:w-full sm:w-1/2 w-full h-fit sm:text-left text-center container-shadow">
+                            <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Availability</h5>
+                            <div class="flex sm:justify-start justify-center flex-wrap gap-1 mb-4">
+                                <span
+                                    class="p-2 bg-[#f2f2f9] rounded-md text-sm leading-none text-[#272727] links-shadow">Mon
+                                    - 9:AM - 2:PM</span>
+                                <span
+                                    class="p-2 bg-[#f2f2f9] rounded-md text-sm leading-none text-[#272727] links-shadow">Tue
+                                    - 9:AM - 2:PM</span>
+                                <span
+                                    class="p-2 bg-[#f2f2f9] rounded-md text-sm leading-none text-[#272727] links-shadow">Wed
+                                    - 9:AM - 2:PM</span>
+                                <span
+                                    class="p-2 bg-[#f2f2f9] rounded-md text-sm leading-none text-[#272727] links-shadow">Thu
+                                    - 9:AM - 2:PM</span>
+                                <span
+                                    class="p-2 bg-[#f2f2f9] rounded-md text-sm leading-none text-[#272727] links-shadow">Fri
+                                    - 9:AM - 2:PM</span>
+                                <span
+                                    class="p-2 bg-[#f2f2f9] rounded-md text-sm leading-none text-[#272727] links-shadow">Sat
+                                    - 9:AM - 2:PM</span>
+                                <span
+                                    class="p-2 bg-[#f2f2f9] rounded-md text-sm leading-none text-[#272727] links-shadow">Sun
+                                    - NA</span>
                             </div>
-                        </form>
+                            <a href="/book-appointment.html"
+                                class="bg-[#116aef] rounded-md text-white text-lg py-2 px-3 links-shadow">Book
+                                Appointment</a>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg xl:w-full sm:w-1/2 w-full container-shadow overflow-hidden relative">
+                            <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Patient Types</h5>
+                                <div>
+                                    <img src="./images/svg/award-1.svg" alt="award1">
+                                </div>
+                                <h1 class="text-3xl text-center text-[#116aef] font-semibold mt-4">4</h1>
+                                <p class="mt-2 text-sm leading-6 text-center">Awards received in 2024.
+                                </p>
+                            <div class="flex justify-between items-center absolute w-[90%] top-[40%]">
+                                <img src="./images/svg/left-slider-arrow.svg" alt="leftarrow" class="w-16 h-16">
+                                <img src="./images/svg/right-slider-arrow.svg" alt="rightarrow" class="w-16 h-16">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="mt-10 py-2 px-4 rounded-lg bg-white text-[#116aef] text-xs container-shadow">
