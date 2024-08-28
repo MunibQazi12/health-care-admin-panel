@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Patient Dashboard</title>
+    <title>Add Patient</title>
     <script src="./script.js"></script>
 </head>
 
@@ -451,9 +451,7 @@
                             </div>
                         </a>
                     </li>
-                    <th class="p-2  font-semibold truncate">
-
-                        class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2
+                    <li class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2
                         border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
                         <div class="flex items-center gap-4">
                             <div
@@ -564,7 +562,7 @@
                         <div class="px-2">
                             <img src="./images/svg/arrow-right.svg" alt="home" class="w-6 h-6 ">
                         </div>
-                        <span class="text-[#116aef] text-sm">Patient Dashboard</span>
+                        <span class="text-[#116aef] text-sm">Add Patient</span>
                     </li>
                 </ul>
                 <div class="lg:flex hidden gap-1 items-center">
@@ -579,475 +577,173 @@
                 </div>
             </div>
             <div class="sm:p-6 p-4">
-                <section class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <div class="flex sm:flex-row flex-col-reverse sm:gap-4 gap-6 justify-between w-full text-[#272727]">
-                        <div class="flex flex-wrap gap-6 items-center sm:w-[calc(100%-128px)] w-full">
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/form-icons/account-pin-circle-line.svg" alt="account"
-                                        class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">Carole</h4>
-                                    <p class="text-sm">Patient Name</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/svg/women-line.svg" alt="women" class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">Female</h4>
-                                    <p class="text-sm">Gender</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/svg/arrow-rightups.svg" alt="account" class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">68</h4>
-                                    <p class="text-sm">Patient Age</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/form-icons/drop-line.svg" alt="account" class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">O+</h4>
-                                    <p class="text-sm">Blood Type</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#d8e2eb] flex justify-center items-center">
-                                    <img src="./images/svg/stethoscope-line.svg" alt="account" class="w-7">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">Dr. David</h4>
-                                    <p class="text-sm">Consulting Doctor</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-28 h-28 rounded-full overflow-hidden sm:mx-0 mx-auto">
-                            <img src="./images/png/patient3.png" alt="patient" class="w-full h-full">
-                        </div>
-                    </div>
-                </section>
-                <section class="w-full mb-4 grid 2xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#ff5a39] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/capsule-line.svg" alt="capsule" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">BP Levels</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/patient-bplevel-graph.svg" alt="bplevel" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#039ce0] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/contrast-drop-2-line.svg" alt="contrast" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">Sugar Levels</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/sugar-level-graph.svg" alt="sugar" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#0ebb13] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/heart-pulse-line.svg" alt="capsule" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">Heart Rate</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/heart-pulse-graph.svg" alt="heartpilse" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#eebb30] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/flask-line.svg" alt="flask" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">Clolesterol</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/colestrol-graph.svg" alt="colestrol" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="w-full flex xl:flex-nowrap flex-wrap gap-4 items-center mb-4">
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Health Insurance Claims
-                        </h5>
-                        <div class="w-full h-80">
-                            <img src="./images/svg/insurance-claim.svg" alt="insurance" class="w-full h-full">
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">My Medical Expenses</h5>
-                        <div class="w-full h-80">
-                            <img src="./images/svg/patient-expense-graph.svg" alt="patientexpense"
-                                class="w-full h-full">
-                        </div>
-                    </div>
-                </section>
-                <section class="w-full flex xl:flex-nowrap flex-wrap gap-4 items-center mb-4">
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Doctor Visits</h5>
-                        <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
-                            <div class="w-full overflow-x-auto hide-scrollbar">
-                                <table
-                                    class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto">
-                                    <thead class="align-bottom">
-                                        <tr class="">
-
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Doctor Name
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Date
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Department
-                                            </th>
-
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Reports
-                                            </th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="p-2 flex items-center truncate w-max">
-                                                <img src="./images/png/doctor-1.png" alt="doctor"
-                                                    class="w-12 h-12 rounded-md border border-white mr-1 img-shadow">
-                                                <span>Vicki Walsh</span>
-                                            </td>
-                                            <td class="p-2 truncate">20/05/2024</td>
-                                            <td class="p-2 truncate">Dentist</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button type="button"
-                                                        class="rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center text-xs text-white py-1 px-2 links-shadow">
-                                                        View Reports
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 flex items-center w-max truncate">
-                                                <img src="./images/png/doctor-2.png" alt="doctor"
-                                                    class="w-12 h-12 rounded-md border border-white mr-1 img-shadow">
-                                                <span>Vicki Walsh</span>
-                                            </td>
-                                            <td class="p-2 truncate">20/05/2024</td>
-                                            <td class="p-2 truncate">Dentist</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button type="button"
-                                                        class="rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center text-xs text-white py-1 px-2 links-shadow">
-                                                        View Reports
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 flex items-center w-max truncate">
-                                                <img src="./images/png/doctor-3.png" alt="doctor"
-                                                    class="w-12 h-12 rounded-md border border-white mr-1 img-shadow">
-                                                <span>Vicki Walsh</span>
-                                            </td>
-                                            <td class="p-2 truncate">20/05/2024</td>
-                                            <td class="p-2 truncate">Dentist</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button type="button"
-                                                        class="rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center text-xs text-white py-1 px-2 links-shadow">
-                                                        View Reports
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Reports</h5>
-                        <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
-                            <div class="w-full overflow-x-auto hide-scrollbar">
-                                <table
-                                    class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto">
-                                    <thead class="align-bottom">
-                                        <tr class="">
-                                            <th class="p-2 font-semibold truncate relative">
-                                                #
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                File
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Reports Link
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Date
-                                            </th>
-
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Actions
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="p-2 truncate">1</td>
-                                            <td class="p-2 flex items-center truncate">
-                                                <div
-                                                    class="w-12 h-12 rounded-md bg-[#116aef] flex justify-center items-center links-shadow">
-                                                    <img src="./images/svg/file-excel-2-line.svg" alt="excelfile"
-                                                        class="h-4 w-4 invert">
-                                                </div>
-                                            </td>
-                                            <td class="p-2 truncate">
-                                                <a href="void:javascript(0)" class="text-sm text-[#116aef]">Reports 1
-                                                    clinical documentation</a>
-                                            </td>
-                                            <td class="p-2 truncate">May-28, 2024</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button
-                                                        class="w-7 h-7 rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center group links-shadow">
-                                                        <img src="./images/svg/delete-bin.svg" alt="delete"
-                                                            class="h-4 w-4 invert">
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 truncate">2</td>
-                                            <td class="p-2 flex items-center truncate">
-                                                <div
-                                                    class="w-12 h-12 rounded-md bg-[#116aef] flex justify-center items-center links-shadow">
-                                                    <img src="./images/svg/file-excel-2-line.svg" alt="excelfile"
-                                                        class="h-4 w-4 invert">
-                                                </div>
-                                            </td>
-                                            <td class="p-2 truncate">
-                                                <a href="void:javascript(0)" class="text-sm text-[#116aef]">Reports 1
-                                                    clinical documentation</a>
-                                            </td>
-                                            <td class="p-2 truncate">May-28, 2024</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button
-                                                        class="w-7 h-7 rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center group links-shadow">
-                                                        <img src="./images/svg/delete-bin.svg" alt="delete"
-                                                            class="h-4 w-4 invert">
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 truncate">3</td>
-                                            <td class="p-2 flex items-center truncate">
-                                                <div
-                                                    class="w-12 h-12 rounded-md bg-[#116aef] flex justify-center items-center links-shadow">
-                                                    <img src="./images/svg/file-excel-2-line.svg" alt="excelfile"
-                                                        class="h-4 w-4 invert">
-                                                </div>
-                                            </td>
-                                            <td class="p-2 truncate">
-                                                <a href="void:javascript(0)" class="text-sm text-[#116aef]">Reports 1
-                                                    clinical documentation</a>
-                                            </td>
-                                            <td class="p-2 truncate">May-28, 2024</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button
-                                                        class="w-7 h-7 rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center group links-shadow">
-                                                        <img src="./images/svg/delete-bin.svg" alt="delete"
-                                                            class="h-4 w-4 invert">
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="w-full grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mb-4 items-center">
-                    <div class="p-4 rounded-lg bg-white container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Health Activity</h5>
-                        <div class="overflow-hidden">
-                            <div class="h-80 overflow-y-auto hide-scrollbar">
-                                <img src="./images/svg/health-activity-graph.svg" alt="healthActivity" class="mx-auto">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-white container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Pharmacy</h5>
-                        <div class="overflow-hidden">
-                            <div class="h-80 overflow-y-auto hide-scrollbar">
-                                <div class="text-center text-[#272727]">
-                                    <img src="./images/svg/reports.svg" alt="reports" class="w-[180px] mx-auto mb-4">
-                                    <h4 class="text-3xl font-bold mb-2">$980</h4>
-                                    <p class="text-sm mb-1">Average Spending</p>
-                                    <p class="text-sm mb-2">
-                                        <b>+20%</b> vs last month
-                                    </p>
-                                    <p class="text-sm opacity-70">You can choose from over 1600 admin dashboard templates on Bootstrap
-                                        Gallery.
-                                      </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-white container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Timeline</h5>
-                        <div class="overflow-hidden">
-                            <div class="h-80 overflow-y-auto hide-scrollbar">
-                                <div class="pt-2.5 pl-1">
-                                    <div class="pb-10 pl-6 text-[#272727] relative border-l-2 border-[#116aef] after:absolute after:w-2.5 after:h-2.5 after:rounded-full after:border-2 after:border-[#151516] after:top-0 after:-left-1.5 after:bg-white">
-                                        <span class="uppercase border-b border-[#151516] border-dashed text-xs pb-1 relative -top-2">An Hour Ago</span>
-                                        <div class="mb-1 text-sm">
-                                            <a href="void:javascript(0)" class="text-[#116aef]">Dr. Janie Mcdonald</a> - sent a new prescription.
-                                        </div>
-                                        <div class="mb-1 text-sm">
-                                            Medecine Name - <a href="void:javascript(0)" class="text-[#ff5a39]">Dr. Janie Mcdonald</a>
-                                        </div>
-                                        <a href="void:javascript(0)" class="flex items-center gap-1">Payment Link  <span class="w-4"><img src="./images/svg/arrow-rightups.svg" alt=""></span></a>
+                <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
+                    <h5 class="text-lg font-medium leading-5 pb-2 text-[#272727]">Add Patient Details</h5>
+                    <div class="mt-6">
+                        <form action="">
+                            <div class="">
+                                <div class="flex flex-wrap gap-4 items-center w-full text-[#272727] text-sm">
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">First Name <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <input type="text" placeholder="Enter First Name"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
                                     </div>
-                                    <div class="pb-10 pl-6 text-[#272727] relative border-l-2 border-[#116aef] after:absolute after:w-2.5 after:h-2.5 after:rounded-full after:border-2 after:border-[#151516] after:top-0 after:-left-1.5 after:bg-white">
-                                        <span class="uppercase border-b border-[#151516] border-dashed text-xs pb-1 relative -top-2">An Hour Ago</span>
-                                        <div class="mb-1 text-sm">
-                                            <a href="void:javascript(0)" class="text-[#116aef]">Dr. Janie Mcdonald</a> - sent a new prescription.
-                                        </div>
-                                        <div class="mb-1 text-sm">
-                                            Medecine Name - <a href="void:javascript(0)" class="text-[#ff5a39]">Dr. Janie Mcdonald</a>
-                                        </div>
-                                        <a href="void:javascript(0)" class="flex items-center gap-1">Payment Link  <span class="w-4"><img src="./images/svg/arrow-rightups.svg" alt=""></span></a>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Last Name <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <input type="email" placeholder="Enter Last Name"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
                                     </div>
-                                    <div class="pb-10 pl-6 text-[#272727] relative border-l-2 border-[#116aef] after:absolute after:w-2.5 after:h-2.5 after:rounded-full after:border-2 after:border-[#151516] after:top-0 after:-left-1.5 after:bg-white">
-                                        <span class="uppercase border-b border-[#151516] border-dashed text-xs pb-1 relative -top-2">An Hour Ago</span>
-                                        <div class="mb-1 text-sm">
-                                            <a href="void:javascript(0)" class="text-[#116aef]">Dr. Janie Mcdonald</a> - sent a new prescription.
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="lname" class="mb-2 inline-block">Age <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <select type="text" placeholder="Gender"
+                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
+                                            <option value="0">Select Age</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Gender <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <div class="w-full h-9 relative flex items-center">
+                                            <div class="mt-1 mr-4 flex gap-2 items-center">
+                                                <input type="radio" value="male"
+                                                    class="w-6 h-6 rounded-full border border-[#cdd6dc]">
+                                                <label for="">Male</label>
+                                            </div>
+                                            <div class="mt-1 mr-4 flex gap-2 items-center">
+                                                <input type="radio" value="female"
+                                                    class="w-6 h-6 rounded-full border border-[#cdd6dc]">
+                                                <label for="">Female</label>
+                                            </div>
                                         </div>
-                                        <div class="mb-1 text-sm">
-                                            Medecine Name - <a href="void:javascript(0)" class="text-[#ff5a39]">Dr. Janie Mcdonald</a>
-                                        </div>
-                                        <a href="void:javascript(0)" class="flex items-center gap-1">Payment Link  <span class="w-4"><img src="./images/svg/arrow-rightups.svg" alt=""></span></a>
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Create ID <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <input type="Number" placeholder="Create Unique ID"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Email ID <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <input type="text" placeholder="Enter Email ID"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Mobile Number <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <input type="text" placeholder="Enter Mobile Number"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="lname" class="mb-2 inline-block">Maritel Status</label>
+                                        <select type="text" placeholder="Gender"
+                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
+                                            <option value="0">Select</option>
+                                            <option value="1">Married</option>
+                                            <option value="2">Un Married</option>
+                                        </select>
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="lname" class="mb-2 inline-block">Occupation</label>
+                                        <select type="text" placeholder="Gender"
+                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
+                                            <option value="0">Select</option>
+                                            <option value="1">Teacher</option>
+                                            <option value="2">Engineer</option>
+                                            <option value="1">Business man</option>
+                                            <option value="2">Bank</option>
+                                            <option value="2">IT </option>
+
+                                        </select>
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="lname" class="mb-2 inline-block">Blood Group <span
+                                                class="text-[#ff5a39]">*</span></label>
+                                        <select type="text" placeholder="Gender"
+                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
+                                            <option value="0">Select</option>
+                                            <option value="1">A+</option>
+                                            <option value="2">A-</option>
+                                            <option value="3">B+</option>
+                                            <option value="4">B-</option>
+                                            <option value="5">O+</option>
+                                            <option value="6">O-</option>
+                                            <option value="7">AB+</option>
+                                            <option value="8">AB-</option>
+                                        </select>
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Blood Presure</label>
+                                        <input type="text" placeholder="Enter Blood Presure"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Sugar</label>
+                                        <input type="text" placeholder="Enter Sugar Level"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Address</label>
+                                        <input type="text" placeholder="Enter Address"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">City</label>
+                                        <input type="text" placeholder="Enter City"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="lname" class="mb-2 inline-block">State</label>
+                                        <select type="text" placeholder="Gender"
+                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
+                                            <option value="0">Select</option>
+                                            <option value="1">Albama</option>
+                                            <option value="2">Alaska</option>
+                                            <option value="3">Arizona</option>
+                                            <option value="4">California</option>
+                                            <option value="5">Florida</option>
+                                        </select>
+                                    </div>
+                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
+                                        <label for="fname" class="mb-2 inline-block">Postal Code</label>
+                                        <input type="text" placeholder="Enter Postal Code"
+                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
+                                    </div>
+                                    <div
+                                        class="w-full min-h-[150px] border border-dashed border-[#cdd6dc] bg-[#ebf8ff] rounded-[5px] p-5 relative cursor-pointer flex flex-col gap-2 justify-center items-center">
+                                        <div class="absolute left-0 top-0 w-full h-full"><input type="" class="w-full h-full bg-[#ebf8ff] cursor-pointer p-5"></div>
+                                        <button type="button" class="bg-transparent text-sm text-black relative z-10">Click here to
+                                            upload or Drop your reports
+                                            here.</button>
+                                            <h5 class="text-lg font-medium text-black relative z-10">Upload your health reports.</h5>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="mt-8 flex items-center gap-2 justify-end">
+                                <a href="viod:javascript(0)"
+                                    class="py-1.5 px-3 text-sm border border-[#d8e2eb] hover:bg-[#d8e2eb] text-[#272727] rounded-md links-shadow">Cancel</a>
+                                <a href="/appointment-list.html"
+                                    class="py-1.5 px-3 text-sm border border-[#116aef] bg-[#116aef] text-white rounded-md links-shadow">
+                                    Create Patient Profile
+                                </a>
+                            </div>
+                        </form>
                     </div>
-                </section>
-                <footer class="mt-10 py-2 px-4 rounded-lg bg-white text-[#116aef] text-xs container-shadow">
+                </div>
+                <div class="mt-10 py-2 px-4 rounded-lg bg-white text-[#116aef] text-xs container-shadow">
                     <p>© Celestials Technologies admin 2024</p>
-                </footer>
+                </div>
             </div>
     </section>
 </body>

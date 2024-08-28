@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Patient Dashboard</title>
+    <title>Patients List</title>
     <script src="./script.js"></script>
 </head>
 
@@ -564,7 +564,7 @@
                         <div class="px-2">
                             <img src="./images/svg/arrow-right.svg" alt="home" class="w-6 h-6 ">
                         </div>
-                        <span class="text-[#116aef] text-sm">Patient Dashboard</span>
+                        <span class="text-[#116aef] text-sm">Patients List</span>
                     </li>
                 </ul>
                 <div class="lg:flex hidden gap-1 items-center">
@@ -579,475 +579,241 @@
                 </div>
             </div>
             <div class="sm:p-6 p-4">
-                <section class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <div class="flex sm:flex-row flex-col-reverse sm:gap-4 gap-6 justify-between w-full text-[#272727]">
-                        <div class="flex flex-wrap gap-6 items-center sm:w-[calc(100%-128px)] w-full">
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/form-icons/account-pin-circle-line.svg" alt="account"
-                                        class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">Carole</h4>
-                                    <p class="text-sm">Patient Name</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/svg/women-line.svg" alt="women" class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">Female</h4>
-                                    <p class="text-sm">Gender</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/svg/arrow-rightups.svg" alt="account" class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">68</h4>
-                                    <p class="text-sm">Patient Age</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#116aef] flex justify-center items-center">
-                                    <img src="./images/form-icons/drop-line.svg" alt="account" class="w-7 invert">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">O+</h4>
-                                    <p class="text-sm">Blood Type</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-16 h-16 rounded-full bg-[#d8e2eb] flex justify-center items-center">
-                                    <img src="./images/svg/stethoscope-line.svg" alt="account" class="w-7">
-                                </div>
-                                <div>
-                                    <h4 class="mb-1 text-xl font-medium">Dr. David</h4>
-                                    <p class="text-sm">Consulting Doctor</p>
-                                </div>
-                            </div>
+                <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
+                    <div class="flex gap-5 justify-between items-center md:pb-8 pb-4">
+                        <h5 class="text-lg font-medium leading-5 text-[#272727]">Patients List</h5>
+                        <a href="/addDoctor-form.html"
+                            class="text-white bg-[#116aef] rounded-md py-1.5 px-3 text-sm links-shadow">
+                            Add Patients
+                        </a>
+                    </div>
+                    <div class="flex sm:flex-nowrap flex-wrap gap-5 justify-between items-center mb-2">
+                        <div class="sm:w-1/2 w-full">
+                            <label for="length" class="text-sm text-[#272727]">Display
+                                <select name="length" id="length"
+                                    class="bg-white text-[#0f1115] py-1 pl-2 pr-7 border border-[#cdd6dc] rounded-md appearance-none table-select">
+                                    <option value="12">12</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                </select>
+                                Records Per Page
+                            </label>
                         </div>
-                        <div class="w-28 h-28 rounded-full overflow-hidden sm:mx-0 mx-auto">
-                            <img src="./images/png/patient3.png" alt="patient" class="w-full h-full">
+                        <div class="sm:w-1/2 w-full sm:text-right">
+                            <label for="form-search" class="text-sm text-[#272727]">
+                                Search:
+                                <input type="search" name="search" id="search"
+                                    class="ml-2 py-1 px-2 border border-[#cdd6dc] rounded-md focus-visible:outline-0 focus:border-[#88b5f7] sm:max-w-[210px] max-w-[180px] w-full focus:links-shadow">
+                            </label>
                         </div>
                     </div>
-                </section>
-                <section class="w-full mb-4 grid 2xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#ff5a39] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/capsule-line.svg" alt="capsule" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">BP Levels</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/patient-bplevel-graph.svg" alt="bplevel" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#039ce0] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/contrast-drop-2-line.svg" alt="contrast" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">Sugar Levels</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/sugar-level-graph.svg" alt="sugar" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#0ebb13] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/heart-pulse-line.svg" alt="capsule" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">Heart Rate</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/heart-pulse-graph.svg" alt="heartpilse" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg w-full text-center container-shadow">
-                        <div class="text-center text-[#272727]">
-                            <div
-                                class="w-12 h-12 bg-[#eebb30] rounded-full links-shadow flex justify-center items-center mx-auto">
-                                <img src="./images/svg/flask-line.svg" alt="flask" class="w-6 invert">
-                            </div>
-                            <h5 class="mt-4 text-lg leading-5">Clolesterol</h5>
-                            <p class="text-sm opacity-50 mt-2">Recent five visits</p>
-                        </div>
-                        <div class="h-28">
-                            <img src="./images/svg/colestrol-graph.svg" alt="colestrol" class="h-full w-full">
-                        </div>
-                        <ul class="list-none m-0 text-[#272727] text-sm border border-[#dde2ee] rounded-md">
-                            <li class="flex gap-4 justify-between items-center py-2 px-3 border-b border-[#dde2ee]">
-                                <p>24/04/2024</p>
-                                <p>140</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center border-b border-[#dde2ee] py-2 px-3">
-                                <p>25/04/2024</p>
-                                <p>230</p>
-                            </li>
-                            <li class="flex gap-4 justify-between items-center py-2 px-3">
-                                <p>26/04/2024</p>
-                                <p>190</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="w-full flex xl:flex-nowrap flex-wrap gap-4 items-center mb-4">
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Health Insurance Claims
-                        </h5>
-                        <div class="w-full h-80">
-                            <img src="./images/svg/insurance-claim.svg" alt="insurance" class="w-full h-full">
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">My Medical Expenses</h5>
-                        <div class="w-full h-80">
-                            <img src="./images/svg/patient-expense-graph.svg" alt="patientexpense"
-                                class="w-full h-full">
-                        </div>
-                    </div>
-                </section>
-                <section class="w-full flex xl:flex-nowrap flex-wrap gap-4 items-center mb-4">
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Doctor Visits</h5>
-                        <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
-                            <div class="w-full overflow-x-auto hide-scrollbar">
-                                <table
-                                    class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto">
-                                    <thead class="align-bottom">
-                                        <tr class="">
+                    <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
+                        <div class="w-full overflow-x-auto">
+                            <table
+                                class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto doctor-list-table">
+                                <thead class="align-bottom">
+                                    <tr class="">
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            No.
+                                        </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Patient Name
+                                        </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Gender
+                                        </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Age
+                                        </th>
 
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Doctor Name
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Date
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Department
-                                            </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Blood Group
+                                        </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Treatment
+                                        </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Mobile
+                                        </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Email
+                                        </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Address
+                                        </th>
 
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Reports
-                                            </th>
+                                        <th class="p-2 pr-7 font-semibold truncate relative">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-2 truncate">#80762</td>
+                                        <td class="p-2 flex items-center w-max truncate">
+                                            <img src="./images/png/patient3.png" alt="doctor1"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Wendi Combs</span>
+                                        </td>
+                                        <td class="p-2 font-medium text-[#eebb30] truncate">Female</td>
+                                        <td class="p-2 truncate">28</td>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="p-2 flex items-center truncate w-max">
-                                                <img src="./images/png/doctor-1.png" alt="doctor"
-                                                    class="w-12 h-12 rounded-md border border-white mr-1 img-shadow">
-                                                <span>Vicki Walsh</span>
-                                            </td>
-                                            <td class="p-2 truncate">20/05/2024</td>
-                                            <td class="p-2 truncate">Dentist</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button type="button"
-                                                        class="rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center text-xs text-white py-1 px-2 links-shadow">
-                                                        View Reports
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 flex items-center w-max truncate">
-                                                <img src="./images/png/doctor-2.png" alt="doctor"
-                                                    class="w-12 h-12 rounded-md border border-white mr-1 img-shadow">
-                                                <span>Vicki Walsh</span>
-                                            </td>
-                                            <td class="p-2 truncate">20/05/2024</td>
-                                            <td class="p-2 truncate">Dentist</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button type="button"
-                                                        class="rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center text-xs text-white py-1 px-2 links-shadow">
-                                                        View Reports
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 flex items-center w-max truncate">
-                                                <img src="./images/png/doctor-3.png" alt="doctor"
-                                                    class="w-12 h-12 rounded-md border border-white mr-1 img-shadow">
-                                                <span>Vicki Walsh</span>
-                                            </td>
-                                            <td class="p-2 truncate">20/05/2024</td>
-                                            <td class="p-2 truncate">Dentist</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button type="button"
-                                                        class="rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center text-xs text-white py-1 px-2 links-shadow">
-                                                        View Reports
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg xl:w-1/2 w-full container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Reports</h5>
-                        <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
-                            <div class="w-full overflow-x-auto hide-scrollbar">
-                                <table
-                                    class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto">
-                                    <thead class="align-bottom">
-                                        <tr class="">
-                                            <th class="p-2 font-semibold truncate relative">
-                                                #
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                File
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Reports Link
-                                            </th>
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Date
-                                            </th>
+                                        <td class="p-2 truncate">AB+</td>
+                                        <td class="p-2 truncate">Cyclospora</td>
+                                        <td class="p-2 truncate">0987654321</td>
+                                        <td class="p-2 truncate">test@testing.com</td>
+                                        <td class="p-2 truncate">360 Branden Knoll</td>
+                                        <td class="p-2 truncate">
+                                            <div class="flex items-center gap-1">
+                                                <button
+                                                    class="w-7 h-7 rounded-md border border-[#ff5a39] hover:bg-[#ff5a39] flex justify-center items-center group links-shadow">
+                                                    <img src="./images/svg/delete-bin.svg" alt="delete"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </button>
+                                                <a href="/addDoctor-form.html"
+                                                    class="w-7 h-7 rounded-md border border-[#0ebb13] hover:bg-[#0ebb13] flex justify-center items-center group links-shadow">
+                                                    <img src="./images/svg/edit-box-line.svg" alt="edit"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </a>
 
-                                            <th class="p-2 font-semibold truncate relative">
-                                                Actions
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="p-2 truncate">1</td>
-                                            <td class="p-2 flex items-center truncate">
-                                                <div
-                                                    class="w-12 h-12 rounded-md bg-[#116aef] flex justify-center items-center links-shadow">
-                                                    <img src="./images/svg/file-excel-2-line.svg" alt="excelfile"
-                                                        class="h-4 w-4 invert">
-                                                </div>
-                                            </td>
-                                            <td class="p-2 truncate">
-                                                <a href="void:javascript(0)" class="text-sm text-[#116aef]">Reports 1
-                                                    clinical documentation</a>
-                                            </td>
-                                            <td class="p-2 truncate">May-28, 2024</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button
-                                                        class="w-7 h-7 rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center group links-shadow">
-                                                        <img src="./images/svg/delete-bin.svg" alt="delete"
-                                                            class="h-4 w-4 invert">
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 truncate">2</td>
-                                            <td class="p-2 flex items-center truncate">
-                                                <div
-                                                    class="w-12 h-12 rounded-md bg-[#116aef] flex justify-center items-center links-shadow">
-                                                    <img src="./images/svg/file-excel-2-line.svg" alt="excelfile"
-                                                        class="h-4 w-4 invert">
-                                                </div>
-                                            </td>
-                                            <td class="p-2 truncate">
-                                                <a href="void:javascript(0)" class="text-sm text-[#116aef]">Reports 1
-                                                    clinical documentation</a>
-                                            </td>
-                                            <td class="p-2 truncate">May-28, 2024</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button
-                                                        class="w-7 h-7 rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center group links-shadow">
-                                                        <img src="./images/svg/delete-bin.svg" alt="delete"
-                                                            class="h-4 w-4 invert">
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2 truncate">3</td>
-                                            <td class="p-2 flex items-center truncate">
-                                                <div
-                                                    class="w-12 h-12 rounded-md bg-[#116aef] flex justify-center items-center links-shadow">
-                                                    <img src="./images/svg/file-excel-2-line.svg" alt="excelfile"
-                                                        class="h-4 w-4 invert">
-                                                </div>
-                                            </td>
-                                            <td class="p-2 truncate">
-                                                <a href="void:javascript(0)" class="text-sm text-[#116aef]">Reports 1
-                                                    clinical documentation</a>
-                                            </td>
-                                            <td class="p-2 truncate">May-28, 2024</td>
-                                            <td class="p-2 truncate">
-                                                <div class="flex items-center gap-1">
-                                                    <button
-                                                        class="w-7 h-7 rounded-md border border-[#ff5a39] bg-[#ff5a39] flex justify-center items-center group links-shadow">
-                                                        <img src="./images/svg/delete-bin.svg" alt="delete"
-                                                            class="h-4 w-4 invert">
-                                                    </button>
-                                                    <button type="button"
-                                                        class="h-7 w-7 rounded-md border border-[#039ce0] bg-[#039ce0] flex justify-center items-center py-1 px-2 links-shadow">
-                                                        <img src="./images/svg/file-download-line.svg"
-                                                            alt="filedownload" class="h-4 w-4 invert">
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                <a href="/doctors-profile.html"
+                                                    class="w-7 h-7 rounded-md border border-[#039ce0] hover:bg-[#039ce0] flex justify-center items-center group  links-shadow">
+                                                    <img src="./images/svg/eye-line.svg" alt="eye"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">#82348</td>
+                                        <td class="p-2 flex items-center w-max truncate">
+                                            <img src="./images/png/patient3.png" alt="doctor1"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Reba Fisher</span>
+                                        </td>
+                                        <td class="p-2 font-medium text-[#eebb30] truncate">Female</td>
+                                        <td class="p-2 truncate">58</td>
+
+                                        <td class="p-2 truncate">A+</td>
+                                        <td class="p-2 truncate">Alphaviruses</td>
+                                        <td class="p-2 truncate">0987654321</td>
+                                        <td class="p-2 truncate">test@testing.com</td>
+                                        <td class="p-2 truncate">806 Je Alley, Robelfurt</td>
+                                        <td class="p-2 truncate">
+                                            <div class="flex items-center gap-1">
+                                                <button
+                                                    class="w-7 h-7 rounded-md border border-[#ff5a39] hover:bg-[#ff5a39] flex justify-center items-center group links-shadow">
+                                                    <img src="./images/svg/delete-bin.svg" alt="delete"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </button>
+                                                <a href="/addDoctor-form.html"
+                                                    class="w-7 h-7 rounded-md border border-[#0ebb13] hover:bg-[#0ebb13] flex justify-center items-center group links-shadow">
+                                                    <img src="./images/svg/edit-box-line.svg" alt="edit"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </a>
+
+                                                <a href="/doctors-profile.html"
+                                                    class="w-7 h-7 rounded-md border border-[#039ce0] hover:bg-[#039ce0] flex justify-center items-center group  links-shadow">
+                                                    <img src="./images/svg/eye-line.svg" alt="eye"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">#82894</td>
+                                        <td class="p-2 flex items-center w-max truncate">
+                                            <img src="./images/png/patient1.png" alt="doctor1"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Nick Morrow</span>
+                                        </td>
+                                        <td class="p-2 font-medium text-[#eebb30] truncate">
+                                            <div class="text-[#039ce0] bg-[#e8f8ff] rounded text-center py-1 px-2 w-fit">
+                                                Male
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">69</td>
+
+                                        <td class="p-2 truncate">A+</td>
+                                        <td class="p-2 truncate">Thyroid</td>
+                                        <td class="p-2 truncate">0987654321</td>
+                                        <td class="p-2 truncate">test@testing.com</td>
+                                        <td class="p-2 truncate">835 Lorena Stream</td>
+                                        <td class="p-2 truncate">
+                                            <div class="flex items-center gap-1">
+                                                <button
+                                                    class="w-7 h-7 rounded-md border border-[#ff5a39] hover:bg-[#ff5a39] flex justify-center items-center group links-shadow">
+                                                    <img src="./images/svg/delete-bin.svg" alt="delete"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </button>
+                                                <a href="/addDoctor-form.html"
+                                                    class="w-7 h-7 rounded-md border border-[#0ebb13] hover:bg-[#0ebb13] flex justify-center items-center group links-shadow">
+                                                    <img src="./images/svg/edit-box-line.svg" alt="edit"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </a>
+
+                                                <a href="/doctors-profile.html"
+                                                    class="w-7 h-7 rounded-md border border-[#039ce0] hover:bg-[#039ce0] flex justify-center items-center group  links-shadow">
+                                                    <img src="./images/svg/eye-line.svg" alt="eye"
+                                                        class="h-4 w-4 opacity-70 group-hover:invert group-hover:brightness-0 group-hover:opacity-100">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-white mt-3">
+                        <div class="flex flex-1 justify-between sm:hidden">
+                            <a href="#"
+                                class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
+                            <a href="#"
+                                class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
+                        </div>
+                        <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+                            <div>
+                                <p class="text-sm text-gray-700">
+                                    Showing
+                                    <span class="font-medium">1</span>
+                                    to
+                                    <span class="font-medium">10</span>
+                                    of
+                                    <span class="font-medium">50</span>
+                                    results
+                                </p>
+                            </div>
+                            <div>
+                                <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+                                    aria-label="Pagination">
+                                    <a href="#"
+                                        class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                                        <span class="sr-only">Previous</span>
+                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" aria-current="page"
+                                        class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+                                    <a href="#"
+                                        class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                                        <span class="sr-only">Next</span>
+                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </nav>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="w-full grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mb-4 items-center">
-                    <div class="p-4 rounded-lg bg-white container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Health Activity</h5>
-                        <div class="overflow-hidden">
-                            <div class="h-80 overflow-y-auto hide-scrollbar">
-                                <img src="./images/svg/health-activity-graph.svg" alt="healthActivity" class="mx-auto">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-white container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Pharmacy</h5>
-                        <div class="overflow-hidden">
-                            <div class="h-80 overflow-y-auto hide-scrollbar">
-                                <div class="text-center text-[#272727]">
-                                    <img src="./images/svg/reports.svg" alt="reports" class="w-[180px] mx-auto mb-4">
-                                    <h4 class="text-3xl font-bold mb-2">$980</h4>
-                                    <p class="text-sm mb-1">Average Spending</p>
-                                    <p class="text-sm mb-2">
-                                        <b>+20%</b> vs last month
-                                    </p>
-                                    <p class="text-sm opacity-70">You can choose from over 1600 admin dashboard templates on Bootstrap
-                                        Gallery.
-                                      </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-white container-shadow">
-                        <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Timeline</h5>
-                        <div class="overflow-hidden">
-                            <div class="h-80 overflow-y-auto hide-scrollbar">
-                                <div class="pt-2.5 pl-1">
-                                    <div class="pb-10 pl-6 text-[#272727] relative border-l-2 border-[#116aef] after:absolute after:w-2.5 after:h-2.5 after:rounded-full after:border-2 after:border-[#151516] after:top-0 after:-left-1.5 after:bg-white">
-                                        <span class="uppercase border-b border-[#151516] border-dashed text-xs pb-1 relative -top-2">An Hour Ago</span>
-                                        <div class="mb-1 text-sm">
-                                            <a href="void:javascript(0)" class="text-[#116aef]">Dr. Janie Mcdonald</a> - sent a new prescription.
-                                        </div>
-                                        <div class="mb-1 text-sm">
-                                            Medecine Name - <a href="void:javascript(0)" class="text-[#ff5a39]">Dr. Janie Mcdonald</a>
-                                        </div>
-                                        <a href="void:javascript(0)" class="flex items-center gap-1">Payment Link  <span class="w-4"><img src="./images/svg/arrow-rightups.svg" alt=""></span></a>
-                                    </div>
-                                    <div class="pb-10 pl-6 text-[#272727] relative border-l-2 border-[#116aef] after:absolute after:w-2.5 after:h-2.5 after:rounded-full after:border-2 after:border-[#151516] after:top-0 after:-left-1.5 after:bg-white">
-                                        <span class="uppercase border-b border-[#151516] border-dashed text-xs pb-1 relative -top-2">An Hour Ago</span>
-                                        <div class="mb-1 text-sm">
-                                            <a href="void:javascript(0)" class="text-[#116aef]">Dr. Janie Mcdonald</a> - sent a new prescription.
-                                        </div>
-                                        <div class="mb-1 text-sm">
-                                            Medecine Name - <a href="void:javascript(0)" class="text-[#ff5a39]">Dr. Janie Mcdonald</a>
-                                        </div>
-                                        <a href="void:javascript(0)" class="flex items-center gap-1">Payment Link  <span class="w-4"><img src="./images/svg/arrow-rightups.svg" alt=""></span></a>
-                                    </div>
-                                    <div class="pb-10 pl-6 text-[#272727] relative border-l-2 border-[#116aef] after:absolute after:w-2.5 after:h-2.5 after:rounded-full after:border-2 after:border-[#151516] after:top-0 after:-left-1.5 after:bg-white">
-                                        <span class="uppercase border-b border-[#151516] border-dashed text-xs pb-1 relative -top-2">An Hour Ago</span>
-                                        <div class="mb-1 text-sm">
-                                            <a href="void:javascript(0)" class="text-[#116aef]">Dr. Janie Mcdonald</a> - sent a new prescription.
-                                        </div>
-                                        <div class="mb-1 text-sm">
-                                            Medecine Name - <a href="void:javascript(0)" class="text-[#ff5a39]">Dr. Janie Mcdonald</a>
-                                        </div>
-                                        <a href="void:javascript(0)" class="flex items-center gap-1">Payment Link  <span class="w-4"><img src="./images/svg/arrow-rightups.svg" alt=""></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <footer class="mt-10 py-2 px-4 rounded-lg bg-white text-[#116aef] text-xs container-shadow">
+                </div>
+                <div class="mt-10 py-2 px-4 rounded-lg bg-white text-[#116aef] text-xs container-shadow">
                     <p>© Celestials Technologies admin 2024</p>
-                </footer>
+                </div>
             </div>
     </section>
 </body>
