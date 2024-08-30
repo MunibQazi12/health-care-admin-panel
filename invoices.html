@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Add Patient</title>
+    <title>Invoices</title>
     <script src="./script.js"></script>
 </head>
 
@@ -451,7 +451,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2
+                    <th class="p-2  font-semibold truncate">
+
+                        class="flex items-center gap-4 justify-between py-2 pr-6 pl-4 text-black border-l-2
                         border-transparent hover:border-[#116aef] hover:bg-[#e9f2ff] group">
                         <div class="flex items-center gap-4">
                             <div
@@ -562,7 +564,7 @@
                         <div class="px-2">
                             <img src="./images/svg/arrow-right.svg" alt="home" class="w-6 h-6 ">
                         </div>
-                        <span class="text-[#116aef] text-sm">Add Patient</span>
+                        <span class="text-[#116aef] text-sm">Invoices</span>
                     </li>
                 </ul>
                 <div class="lg:flex hidden gap-1 items-center">
@@ -578,167 +580,283 @@
             </div>
             <div class="sm:p-6 p-4">
                 <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <h5 class="text-lg font-medium leading-5 pb-2 text-[#272727]">Add Patient Details</h5>
-                    <div class="mt-6">
-                        <form action="">
-                            <div class="">
-                                <div class="flex flex-wrap gap-4 items-center w-full text-[#272727] text-sm">
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">First Name <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <input type="text" placeholder="Enter First Name"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Last Name <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <input type="email" placeholder="Enter Last Name"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Age <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <select type="text" placeholder="Gender"
-                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                            <option value="0">Select Age</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-
-                                        </select>
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Gender <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <div class="w-full h-9 relative flex items-center">
-                                            <div class="mt-1 mr-4 flex gap-2 items-center">
-                                                <input type="radio" value="male"
-                                                    class="w-6 h-6 rounded-full border border-[#cdd6dc]">
-                                                <label for="">Male</label>
+                    <div class="flex flex-wrap gap-5 justify-between items-end md:pb-8 pb-4">
+                        <small class="text-[#272727]">Select all checkboxes to send an update.</small>
+                        <a href="/add-department-form.html"
+                            class="text-[#0f1115] bg-[#d8e2eb] opacity-60 border border-[#d8e2eb] rounded-md py-1.5 px-3 text-sm links-shadow">
+                            Add Department
+                        </a>
+                    </div>
+                    <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
+                        <div class="w-full overflow-x-auto">
+                            <table
+                                class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto">
+                                <thead class="align-bottom">
+                                    <tr class="">
+                                        <th class="p-2 font-semibold truncate relative inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
                                             </div>
-                                            <div class="mt-1 mr-4 flex gap-2 items-center">
-                                                <input type="radio" value="female"
-                                                    class="w-6 h-6 rounded-full border border-[#cdd6dc]">
-                                                <label for="">Female</label>
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Invoice No.
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Patient
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Created Date
+                                        </th>
+
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Due Date
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Money Spent
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Status
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Create ID <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <input type="Number" placeholder="Create Unique ID"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Email ID <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <input type="text" placeholder="Enter Email ID"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Mobile Number <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <input type="text" placeholder="Enter Mobile Number"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Maritel Status</label>
-                                        <select type="text" placeholder="Gender"
-                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                            <option value="0">Select</option>
-                                            <option value="1">Married</option>
-                                            <option value="2">Un Married</option>
-                                        </select>
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Occupation</label>
-                                        <select type="text" placeholder="Gender"
-                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                            <option value="0">Select</option>
-                                            <option value="1">Teacher</option>
-                                            <option value="2">Engineer</option>
-                                            <option value="1">Business man</option>
-                                            <option value="2">Bank</option>
-                                            <option value="2">IT </option>
-
-                                        </select>
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">Blood Group <span
-                                                class="text-[#ff5a39]">*</span></label>
-                                        <select type="text" placeholder="Gender"
-                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                            <option value="0">Select</option>
-                                            <option value="1">A+</option>
-                                            <option value="2">A-</option>
-                                            <option value="3">B+</option>
-                                            <option value="4">B-</option>
-                                            <option value="5">O+</option>
-                                            <option value="6">O-</option>
-                                            <option value="7">AB+</option>
-                                            <option value="8">AB-</option>
-                                        </select>
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Blood Presure</label>
-                                        <input type="text" placeholder="Enter Blood Presure"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Sugar</label>
-                                        <input type="text" placeholder="Enter Sugar Level"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Address</label>
-                                        <input type="text" placeholder="Enter Address"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">City</label>
-                                        <input type="text" placeholder="Enter City"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="lname" class="mb-2 inline-block">State</label>
-                                        <select type="text" placeholder="Gender"
-                                            class="h-9 bg-white rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full appearance-none table-select">
-                                            <option value="0">Select</option>
-                                            <option value="1">Albama</option>
-                                            <option value="2">Alaska</option>
-                                            <option value="3">Arizona</option>
-                                            <option value="4">California</option>
-                                            <option value="5">Florida</option>
-                                        </select>
-                                    </div>
-                                    <div class="lg:w-[32%] sm:w-[48.5%] w-full">
-                                        <label for="fname" class="mb-2 inline-block">Postal Code</label>
-                                        <input type="text" placeholder="Enter Postal Code"
-                                            class="h-9 rounded-lg py-1.5 px-3 border border-[#cdd6dc] focus-visible:outline-0 focus:border-[#88b5f7] w-full">
-                                    </div>
-                                    <div
-                                        class="w-full min-h-[150px] border border-dashed border-[#cdd6dc] bg-[#ebf8ff] rounded-[5px] p-5 relative cursor-pointer flex flex-col gap-2 justify-center items-center">
-                                        <div class="absolute left-0 top-0 w-full h-full"><input type="" class="w-full h-full bg-[#ebf8ff] cursor-pointer p-5"></div>
-                                        <button type="button" class="bg-transparent text-sm text-black relative z-10 text-center">Click here to
-                                            upload or Drop your reports
-                                            here.</button>
-                                            <h5 class="sm:text-lg text-sm font-medium text-black text-center relative z-10">Upload your health reports.</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-8 flex items-center gap-2 justify-end">
-                                <a href="viod:javascript(0)"
-                                    class="py-1.5 px-3 text-sm border border-[#d8e2eb] hover:bg-[#d8e2eb] text-[#272727] rounded-md links-shadow">Cancel</a>
-                                <a href="/appointment-list.html"
-                                    class="py-1.5 px-3 text-sm border border-[#116aef] bg-[#116aef] text-white rounded-md links-shadow">
-                                    Create Patient Profile
-                                </a>
-                            </div>
-                        </form>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Paid</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#eebb30] text-xs text-white font-semibold">Pending</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Paid</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Paid</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#ff5a39] text-xs text-white font-semibold">Overdue</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Paid</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Paid</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#eebb30] text-xs text-white font-semibold">Pending</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Paid</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td class="p-2 truncate inline-flex">
+                                            <div class="inline-flex">
+                                                <input type="checkbox" name="" id=""
+                                                    class="w-6 h-6 rounded border border-[#cdd6dc]">
+                                            </div>
+                                        </td>
+                                        <td class="p-2 truncate">#000988</td>
+                                        <td class="p-2 truncate">Trugex Malin</td>
+                                        <td class="p-2 truncate">20/04/2024</td>
+                                        <td class="p-2 truncate">24/04/2024 </td>
+                                        <td class="p-2 truncate">$9830.00</td>
+                                        <td class="p-2 truncate">
+                                            <span
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Paid</span>
+                                        </td>
+                                        <td class="p-2 truncate">
+                                            <button
+                                                class="py-1 px-2 rounded bg-[#116aef] text-sm text-white container-shadow">
+                                                Send Mail
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="mt-10 py-2 px-4 rounded-lg bg-white text-[#116aef] text-xs container-shadow">
