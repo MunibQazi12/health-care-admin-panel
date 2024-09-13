@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Expenses</title>
+    <title>HR Approvals</title>
     <script src="./script.js"></script>
 </head>
 
@@ -562,7 +562,7 @@
                         <div class="px-2">
                             <img src="./images/svg/arrow-right.svg" alt="home" class="w-6 h-6 ">
                         </div>
-                        <span class="text-[#116aef] text-sm">Expenses</span>
+                        <span class="text-[#116aef] text-sm">HR Approvals</span>
                     </li>
                 </ul>
                 <div class="lg:flex hidden gap-1 items-center">
@@ -577,14 +577,9 @@
                 </div>
             </div>
             <div class="sm:p-6 p-4">
+
                 <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Expenses by Month</h5>
-                    <div class="w-full">
-                        <img src="./images/svg/payment-graph.svg" alt="insurance" class="w-full">
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <h5 class="text-lg font-medium leading-5 text-[#272727] mb-8">Summary</h5>
+                    <h5 class="text-lg font-medium leading-5 text-[#272727] mb-8">HR Approvals</h5>
                     <div class="flex flex-wrap gap-5 justify-between items-center mb-2">
                         <div class="flex flex-wrap sm:justify-between justify-center gap-1 items-center">
                             <button type="button"
@@ -616,22 +611,19 @@
                                             #
                                         </th>
                                         <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Product
+                                            Profile
                                         </th>
                                         <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Dealer
+                                            Applied For
                                         </th>
                                         <th class="p-2 pr-7 font-semibold truncate relative">
                                             Department
                                         </th>
                                         <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Purchase Date
+                                            HR Name
                                         </th>
                                         <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Payment
-                                        </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Amount
+                                            Salary Offered
                                         </th>
                                         <th class="p-2 pr-7 font-semibold truncate relative">
                                             Status
@@ -641,95 +633,53 @@
                                 <tbody>
                                     <tr class="text-sm">
                                         <td class="p-2 truncate">1</td>
-                                        <td class="p-2 truncate">PicoPlus</td>
                                         <td class="p-2 truncate">Jamaal Calhoun</td>
-                                        <td class="p-2 truncate">Anatomy</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">PayPal</td>
-                                        <td class="p-2 truncate">$2590.00</td>
+                                        <td class="p-2 truncate">Doctor</td>
+                                        <td class="p-2 truncate">Psychiatrists</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-1.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Vicki Walsh</span>
+                                        </td>
+                                        <td class="p-2 truncate">$150000.00</td>
                                         <td class="p-2 truncate">
                                             <span
-                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Approved</span>
+                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Selected</span>
                                         </td>
                                     </tr>
                                     <tr class="text-sm">
                                         <td class="p-2 truncate">2</td>
-                                        <td class="p-2 truncate">Excel V</td>
-                                        <td class="p-2 truncate">Holly Brock</td>
-                                        <td class="p-2 truncate">Neurology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Credit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
+                                        <td class="p-2 truncate">Jamaal Calhoun</td>
+                                        <td class="p-2 truncate">Doctor</td>
+                                        <td class="p-2 truncate">Psychiatrists</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-2.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Vicki Walsh</span>
+                                        </td>
+                                        <td class="p-2 truncate">$150000.00</td>
                                         <td class="p-2 truncate">
                                             <span
-                                                class="py-1 px-2 rounded bg-[#eebb30] text-xs text-white font-semibold">Pending</span>
+                                                class="py-1 px-2 rounded bg-[#eebb30] text-xs text-white font-semibold">Processing</span>
                                         </td>
                                     </tr>
                                     <tr class="text-sm">
                                         <td class="p-2 truncate">3</td>
-                                        <td class="p-2 truncate">Plasmage</td>
-                                        <td class="p-2 truncate">Leona Francis</td>
-                                        <td class="p-2 truncate">Orthopedics</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Cradit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
+                                        <td class="p-2 truncate">Jamaal Calhoun</td>
+                                        <td class="p-2 truncate">Doctor</td>
+                                        <td class="p-2 truncate">Psychiatrists</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-2.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Vicki Walsh</span>
+                                        </td>
+                                        <td class="p-2 truncate">$150000.00</td>
                                         <td class="p-2 truncate">
                                             <span
                                                 class="py-1 px-2 rounded bg-[#ff5a39] text-xs text-white font-semibold">Rejected</span>
                                         </td>
                                     </tr>
-                                    <tr class="text-sm">
-                                        <td class="p-2 truncate">4</td>
-                                        <td class="p-2 truncate">Spectra</td>
-                                        <td class="p-2 truncate">Noah Terrell</td>
-                                        <td class="p-2 truncate">Cardiology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Debit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#151516] text-xs text-white font-semibold">New</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
-                                        <td class="p-2 truncate">5</td>
-                                        <td class="p-2 truncate">Ultherapy</td>
-                                        <td class="p-2 truncate">Tisha Lin</td>
-                                        <td class="p-2 truncate">Neurology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Cheque</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Approved</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
-                                        <td class="p-2 truncate">1</td>
-                                        <td class="p-2 truncate">PicoPlus</td>
-                                        <td class="p-2 truncate">Jamaal Calhoun</td>
-                                        <td class="p-2 truncate">Anatomy</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">PayPal</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Approved</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
-                                        <td class="p-2 truncate">2</td>
-                                        <td class="p-2 truncate">Excel V</td>
-                                        <td class="p-2 truncate">Holly Brock</td>
-                                        <td class="p-2 truncate">Neurology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Credit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#eebb30] text-xs text-white font-semibold">Pending</span>
-                                        </td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>

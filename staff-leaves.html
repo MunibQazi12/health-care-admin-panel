@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Expenses</title>
+    <title>Staff Leaves</title>
     <script src="./script.js"></script>
 </head>
 
@@ -562,7 +562,7 @@
                         <div class="px-2">
                             <img src="./images/svg/arrow-right.svg" alt="home" class="w-6 h-6 ">
                         </div>
-                        <span class="text-[#116aef] text-sm">Expenses</span>
+                        <span class="text-[#116aef] text-sm">Staff Leaves</span>
                     </li>
                 </ul>
                 <div class="lg:flex hidden gap-1 items-center">
@@ -577,28 +577,32 @@
                 </div>
             </div>
             <div class="sm:p-6 p-4">
+
                 <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <h5 class="text-lg font-medium leading-5 md:pb-6 pb-2 text-[#272727]">Expenses by Month</h5>
-                    <div class="w-full">
-                        <img src="./images/svg/payment-graph.svg" alt="insurance" class="w-full">
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-lg w-full container-shadow mb-4">
-                    <h5 class="text-lg font-medium leading-5 text-[#272727] mb-8">Summary</h5>
-                    <div class="flex flex-wrap gap-5 justify-between items-center mb-2">
-                        <div class="flex flex-wrap sm:justify-between justify-center gap-1 items-center">
-                            <button type="button"
-                                class="py-1 px-3 border border-[#dee1e9] rounded text-sm leading-none">Copy</button>
-                            <button type="button"
-                                class="py-1 px-3 border border-[#dee1e9] rounded text-sm leading-none">CSV</button>
-                            <button type="button"
-                                class="py-1 px-3 border border-[#dee1e9] rounded text-sm leading-none">Excel</button>
-                            <button type="button"
-                                class="py-1 px-3 border border-[#dee1e9] rounded text-sm leading-none">PDF</button>
-                            <button type="button"
-                                class="py-1 px-3 border border-[#dee1e9] rounded text-sm leading-none">Print</button>
+                    <div class="flex flex-wrap justify-end gap-5 items-center mb-6">
+
+                        <div class="max-w-[220px] w-full">
+                            <select name="" id=""
+                                class="w-full h-9 py-1.5 pl-3 pr-10 border border-[#cdd6dc] rounded-md bg-white appearance-none table-select text-sm text-[#0f1115]">
+                                <option value="0">May 2024</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
                         </div>
-                        <div class="sm:w-fit w-full sm:text-right">
+                    </div>
+                    <div class="flex flex-wrap gap-5 justify-end items-center mb-2">
+
+                        <div class="w-fit sm:text-right">
                             <label for="form-search" class="text-sm text-[#272727]">
                                 Search:
                                 <input type="search" name="search" id="search"
@@ -609,175 +613,283 @@
                     <div class="rounded-md overflow-hidden border border-[#cdd6dc] w-full">
                         <div class="w-full overflow-x-auto">
                             <table
-                                class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto doctor-list-table">
+                                class="w-full border-collapse m-0 align-middle text-[#31373d] text-sm text-left table-auto">
                                 <thead class="align-bottom">
                                     <tr class="">
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            #
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Emp ID
                                         </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Product
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Emp Name
                                         </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Dealer
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Position
                                         </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Department
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Jan
                                         </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Purchase Date
+
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Feb
                                         </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Payment
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Mar
                                         </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Amount
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Apr
                                         </th>
-                                        <th class="p-2 pr-7 font-semibold truncate relative">
-                                            Status
+                                        <th class="p-2 font-semibold truncate relative">
+                                            May
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Jun
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Jul
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Aug
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Sep
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Oct
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Nov
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Dec
+                                        </th>
+                                        <th class="p-2 font-semibold truncate relative">
+                                            Total
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="text-sm">
+                                    <tr>
+                                        <td class="p-2 truncate">MES-896</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-1.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Vicki Walsh</span>
+                                        </td>
+                                        <td class="p-2 truncate">Oncologist</td>
                                         <td class="p-2 truncate">1</td>
-                                        <td class="p-2 truncate">PicoPlus</td>
-                                        <td class="p-2 truncate">Jamaal Calhoun</td>
-                                        <td class="p-2 truncate">Anatomy</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">PayPal</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Approved</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
-                                        <td class="p-2 truncate">2</td>
-                                        <td class="p-2 truncate">Excel V</td>
-                                        <td class="p-2 truncate">Holly Brock</td>
-                                        <td class="p-2 truncate">Neurology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Credit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#eebb30] text-xs text-white font-semibold">Pending</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
+                                        <td class="p-2 truncate">0</td>
                                         <td class="p-2 truncate">3</td>
-                                        <td class="p-2 truncate">Plasmage</td>
-                                        <td class="p-2 truncate">Leona Francis</td>
-                                        <td class="p-2 truncate">Orthopedics</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Cradit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#ff5a39] text-xs text-white font-semibold">Rejected</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
-                                        <td class="p-2 truncate">4</td>
-                                        <td class="p-2 truncate">Spectra</td>
-                                        <td class="p-2 truncate">Noah Terrell</td>
-                                        <td class="p-2 truncate">Cardiology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Debit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#151516] text-xs text-white font-semibold">New</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
-                                        <td class="p-2 truncate">5</td>
-                                        <td class="p-2 truncate">Ultherapy</td>
-                                        <td class="p-2 truncate">Tisha Lin</td>
-                                        <td class="p-2 truncate">Neurology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Cheque</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Approved</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
                                         <td class="p-2 truncate">1</td>
-                                        <td class="p-2 truncate">PicoPlus</td>
-                                        <td class="p-2 truncate">Jamaal Calhoun</td>
-                                        <td class="p-2 truncate">Anatomy</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">PayPal</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#0ebb13] text-xs text-white font-semibold">Approved</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-sm">
                                         <td class="p-2 truncate">2</td>
-                                        <td class="p-2 truncate">Excel V</td>
-                                        <td class="p-2 truncate">Holly Brock</td>
-                                        <td class="p-2 truncate">Neurology</td>
-                                        <td class="p-2 truncate">02/05/2024 </td>
-                                        <td class="p-2 truncate">Credit Card</td>
-                                        <td class="p-2 truncate">$2590.00</td>
-                                        <td class="p-2 truncate">
-                                            <span
-                                                class="py-1 px-2 rounded bg-[#eebb30] text-xs text-white font-semibold">Pending</span>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-345</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-2.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Smith White</span>
                                         </td>
+                                        <td class="p-2 truncate">Neurology</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-762</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-3.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Gilbert Sandoval</span>
+                                        </td>
+                                        <td class="p-2 truncate">Cardiologist</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-324</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-4.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Bernardo James</span>
+                                        </td>
+                                        <td class="p-2 truncate">Clinical Doctor</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-560</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-5.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Ronald Sullivan</span>
+                                        </td>
+                                        <td class="p-2 truncate">Radiologist</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-223</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-1.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Vicki Walsh</span>
+                                        </td>
+                                        <td class="p-2 truncate">Oncologist</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-980</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-2.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Smith White</span>
+                                        </td>
+                                        <td class="p-2 truncate">Neurology</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-665</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-3.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Gilbert Sandoval</span>
+                                        </td>
+                                        <td class="p-2 truncate">Cardiologist</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-453</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-4.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Bernardo James</span>
+                                        </td>
+                                        <td class="p-2 truncate">Clinical Doctor</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 truncate">MES-224</td>
+                                        <td class="p-2 flex items-center truncate">
+                                            <img src="./images/png/doctor-5.png" alt="doctor"
+                                                class="w-8 h-8 rounded-full border border-white mr-1 img-shadow">
+                                            <span>Ronald Sullivan</span>
+                                        </td>
+                                        <td class="p-2 truncate">Radiologist</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">2</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">3</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">0</td>
+                                        <td class="p-2 truncate">1</td>
+                                        <td class="p-2 truncate">10</td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between bg-white mt-3">
-                        <div class="flex flex-1 justify-between sm:hidden">
-                            <a href="#"
-                                class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
-                            <a href="#"
-                                class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
-                        </div>
-                        <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-                            <div>
-                                <p class="text-sm text-gray-700">
-                                    Showing
-                                    <span class="font-medium">1</span>
-                                    to
-                                    <span class="font-medium">10</span>
-                                    of
-                                    <span class="font-medium">50</span>
-                                    results
-                                </p>
-                            </div>
-                            <div>
-                                <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm"
-                                    aria-label="Pagination">
-                                    <a href="#"
-                                        class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
-                                        <span class="sr-only">Previous</span>
-                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                    <a href="#" aria-current="page"
-                                        class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
-                                    <a href="#"
-                                        class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
-                                        <span class="sr-only">Next</span>
-                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </nav>
-                            </div>
                         </div>
                     </div>
                 </div>
